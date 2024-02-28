@@ -1,0 +1,28 @@
+:root{
+	/* 软件内部Markdown样式 */
+	#write {
+	  max-width: 950px;
+	  padding: 15px;
+	  line-height: 2.25;
+	  color: #262626;
+	  letter-spacing: 1.1px;
+	  word-break: break-word;
+	  word-wrap: break-word;
+	  text-align: left;
+	  background-color: #262626;
+	  margin: 0;
+	  background: #262626;
+	}
+
+	#write p {
+	  color: #fff;
+	  margin: 10px 10px;
+	  font-family: MiSans, Microsoft YaHei, serif;
+	/*  font-family: Optima-Regular, Optima, PingFangSC-light, PingFangTC-light,
+		"PingFang SC", Cambria, Cochin, Georgia, Times, "Times New Roman", serif; */
+
+	  font-size: 1rem;
+	  word-spacing: 2px;
+	}
+
+}
