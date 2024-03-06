@@ -151,7 +151,7 @@
 /* 无序列表整体样式 */
 #write ul {
   font-size: 15px;
-  color: #000;
+  color: #fff;
 
 }
 
@@ -179,7 +179,7 @@
   margin-right: 11px;
   margin-left: -24px;
   border-radius: 100%;
-  border: 3px solid #f7f7f7;
+  border: 3px solid #fff;
   z-index: 100;
   position: relative;
 }
@@ -228,7 +228,7 @@
   height: 1.1rem;
   text-align: center;
   vertical-align: middle;
-  background-color: #f7f7f7;
+  background-color: #fff;
   border: 2px solid #ffb600;
   border-radius: 30%;
 }
@@ -274,7 +274,7 @@
 
 /* 链接 */
 #write  a {
-  color: #f7f7f7;
+  color: #fff;
   border-bottom: 1px solid #FE5CB1;
   text-decoration: none;
   transform: all linear 0.1s;
@@ -315,7 +315,7 @@
 /* 斜体 */
 #write em {
   font-style: italic;
-  color: #f7f7f7;
+  color: #fff;
 }
 /* 高亮 */
 #write mark {
@@ -325,12 +325,12 @@
 }
 /* 加粗斜体 */
 #write em strong {
-  color: #f7f7f7;
+  color: #fff;
 }
 
 /* 删除线 */
 #write del {
-  color: #f7f7f7;
+  color: #fff;
 }
 
 /* 分隔线*/
@@ -368,7 +368,7 @@
   padding: 0.2em 0.4em;
 }
 #write li code {
-  color: #f7f7f7;
+  color: #fff;
 }
 
 
@@ -377,7 +377,7 @@
 #write table {
   display: table;
   text-align: left;
-  color: #f7f7f7;
+  color: #fff;
 }
 #write tbody {
   border: 0;
@@ -406,32 +406,32 @@
 /* 脚注文字 */
 #write .footnote-word {
   font-weight: normal;
-  color: #f7f7f7;
+  color: #fff;
 }
 
 /* 脚注上标 */
 #write .footnote-ref {
   font-weight: normal;
-  color: #f7f7f7;
+  color: #fff;
 }
 
 /*脚注链接样式*/
 #write .footnote-item em {
   font-size: 14px;
-  color: #f7f7f7;
+  color: #fff;
   display: block;
   background: none;
 }
 
 /* 行间公式*/
 #write .block-equation svg {
-	color: #f7f7f7;
+	color: #fff;
 }
 
 /* 行内公式
 */
 #write .inline-equation svg {
-	color: #f7f7f7;
+	color: #fff;
 }
 
 /* 复选框 */
