@@ -22,7 +22,7 @@
 
 /* 一级标题 */
 #write h1 {
-  font-size: 1.8rem;
+  font-size: 1.5rem;
   display: table;
   font-weight: bold;
   margin: 20px 0;
@@ -50,22 +50,33 @@
 
 /* 二级标题 */
 #write h2 {
-  font-size: 1.5rem;
-  border-bottom: 3px solid #F37553;
+  font-size: 1.3rem;
+  border-bottom: 2px solid #F37553;
   
 }
 
 /* 二级标题内容 */
 #write h2 span {
-  display: inline-block;
-  background: #F37553;
-  color: #ffffff;
-  padding: 0px 8px;
-  border-top-right-radius: 5px;
-  border-top-left-radius: 5px;
-  margin-right: 3px;
+	display: inline-block;
+	font-weight: bold;
+	background: rgb(239, 112, 96);
+	color: #ffffff;
+	padding: 3px 10px 1px;
+	border-top-right-radius: 3px;
+	border-top-left-radius: 3px;
+	margin-right: 3px;
+
 }
 
+/* 二级标题右侧下划线 */
+#write h2:after {
+	display: inline-block;
+	content: "";
+	vertical-align: bottom;
+	border-bottom: 1.25rem solid #efebe9;
+	border-right: 1.25rem solid transparent;
+
+}
 
 
 /* 三级标题 */
@@ -88,7 +99,7 @@
 /* 四级标题 */
 #write h4 {
   margin: 20px 0;
-  font-size: 1.15rem;
+  font-size: 1.2rem;
   text-align: left;
   color: #3fccca;
 }
@@ -105,7 +116,7 @@
 
 #write h6 {
   font-size: 1rem;
-  color: #f7f7f7;
+  color: #fff;
 }
 
 
@@ -266,7 +277,7 @@
     padding: 5px 10px 5px 10px;
     margin-bottom: 8px;
     margin-top: 8px;
-    background: #8099a4;
+    background: #4E5D6C;
 }
 
 
