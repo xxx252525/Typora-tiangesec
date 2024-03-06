@@ -2,7 +2,14 @@ body {
 	background: #262626;
 	background-color: #262626; /* 您的背景颜色 */
 	background-image: url('./52pojie_1920x1080.jpg'); /* 您的背景图像路径 */
-
+	background-size: cover; /* 覆盖整个元素 */
+	background-repeat: no-repeat; /* 不重复背景图像 */
+	background-position: center center; /* 背景图像居中 */
+	background-attachment: fixed; /* 背景图像固定，不随页面滚动 */
+	display: flex; /* 使用flex布局使内容居中 */
+	height: 100vh; /* 设置身体的高度为视口的高度 */
+	align-items: center; /* 垂直居中内容 */
+	justify-content: center; /* 水平居中内容 */
 }
 /* 软件内部Markdown样式 */
 #write {

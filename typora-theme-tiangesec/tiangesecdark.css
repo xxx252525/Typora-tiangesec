@@ -68,16 +68,6 @@
 
 }
 
-/* 二级标题右侧下划线 */
-#write h2:after {
-	display: inline-block;
-	content: "";
-	vertical-align: bottom;
-	border-bottom: 1.25rem solid #efebe9;
-	border-right: 1.25rem solid transparent;
-
-}
-
 
 /* 三级标题 */
 #write h3 {
@@ -508,9 +498,9 @@ blockquote .task-list-item input::before {
 /* 侧边栏 */
 #typora-sidebar {
     color: #3fcc98;
-    background-color: #262626;
+    background-color: #1f1f21;
     font-color: #fff;
-	border-top: 0 solid #262626;
+	border-top: 0 solid #1f1f21;
 }
 
 
