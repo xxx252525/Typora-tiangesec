@@ -27,7 +27,7 @@
   font-weight: bold;
   margin: 20px 0;
   padding: 0px 10px;
-  border-radius: 12px;
+  border-radius: 10px;
   background-color: #f6ae77;
   background: linear-gradient(to right, #f7ce68, #fbabfe);
   background-size: 200% 100%;
@@ -513,6 +513,11 @@ blockquote .task-list-item input::before {
 	border-top: 0 solid #262626;
 }
 
+
+/* 设置目录的样式 */
+#write div[mdtype=toc] {
+  font-size: 1rem;
+}
 
 
 

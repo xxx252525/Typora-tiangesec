@@ -1,32 +1,36 @@
-:root{
-	/* 软件内部Markdown样式 */
-	#write {
-	  max-width: 900px;
-	  padding: 15px;
-	  line-height: 2;
-	  color: #fff;
-	  letter-spacing: 1px;
-	  word-break: break-word;
-	  word-wrap: break-word;
-	  text-align: left;
-	  background-color: #262626;
-	  margin: 0;
-	  background: #262626;
-	  font-family: MiSans, Microsoft YaHei, Open Sans, serif, Cascadia Code, Fira Code, JetBrains Momo;
-	}
-	
-	/*段落*/
-	#write + p, 
-	#write blockquote p {
-	  font-size: 1rem;
-	  padding-top: .5rem;
-	  padding-bottom: .5rem;
-	  margin: 0;
-	  line-height: 1.5rem;
-	  color: #fff;
-	}
-	#write div[mdtype=toc] {
-	  font-size: 1rem;
-	}
+body {
+	background: #262626;
+	background-color: #262626; /* 您的背景颜色 */
+	background-image: url('./52pojie_1920x1080.jpg'); /* 您的背景图像路径 */
 
 }
+/* 软件内部Markdown样式 */
+#write {
+	font-size: 1rem;
+	word-spacing: 0px;
+	letter-spacing: 0px;
+	max-width: 900px;
+	padding: 12px;
+	line-height: 2;
+	color: #fff;
+	word-break: break-word;
+	word-wrap: break-word;
+	text-align: left;
+    font-family: MiSans, Microsoft YaHei, Open Sans, serif, Cascadia Code, Fira Code, JetBrains Momo;
+}
+
+/*段落*/
+#write + p, 
+#write blockquote p {
+  font-size: 1rem;
+  padding-top: .5rem;
+  padding-bottom: .5rem;
+  margin: 0;
+  line-height: 1.5rem;
+  color: #fff;
+}
+
+#write div[mdtype=toc] {
+  font-size: 1rem;
+}
+
