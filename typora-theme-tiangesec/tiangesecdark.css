@@ -507,7 +507,7 @@ blockquote .task-list-item input::before {
 
 /* 侧边栏 */
 #typora-sidebar {
-    color: #fff;
+    color: #3fcc98;
     background-color: #262626;
     font-color: #fff;
 	border-top: 0 solid #262626;
@@ -517,6 +517,7 @@ blockquote .task-list-item input::before {
 /* 设置目录的样式 */
 #write div[mdtype=toc] {
   font-size: 1rem;
+
 }
 
 
