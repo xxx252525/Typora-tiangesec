@@ -1,0 +1,566 @@
+@import "dark/dark.css";
+@import "dark/code.css";
+
+
+/* 打印页面设置 */
+/* @media print {
+  * {
+    -webkit-print-color-adjust: exact; 
+    print-color-adjust: exact;
+  }
+  body {
+    width: 21cm; 
+    height: 29.7cm; 
+    margin: 1cm; 
+  }
+  p {
+    line-height: 1.5rem; 
+  }
+} */
+
+
+/* 一级标题 */
+#write h1 {
+  font-size: 1.5rem;
+  display: table;
+  font-weight: bold;
+  margin: 20px 0;
+  padding: 0px 10px;
+  border-radius: 10px;
+  background-color: #f6ae77;
+  background: linear-gradient(to right, #f7ce68, #fbabfe);
+  background-size: 200% 100%;
+  background-position: 0% 0%;
+  transition: all ease-in-out 0.1s;
+}
+
+#write h1:hover {
+  background-position: -100% -100%;
+  transition: all ease-in-out 0.1s;
+}
+
+/* 一级标题内容 */
+#write h1 .content {
+}
+
+/* 一级标题修饰 请参考有实例的主题 */
+#write h1:after {
+}
+
+/* 二级标题 */
+#write h2 {
+  font-size: 1.3rem;
+  border-bottom: 2px solid #F37553;
+  
+}
+
+/* 二级标题内容 */
+#write h2 span {
+	display: inline-block;
+	font-weight: bold;
+	background: rgb(239, 112, 96);
+	color: #ffffff;
+	padding: 3px 10px 1px;
+	border-top-right-radius: 3px;
+	border-top-left-radius: 3px;
+	margin-right: 3px;
+
+}
+
+
+/* 三级标题 */
+#write h3 {
+  font-size: 1.3rem;
+}
+
+/* 三级标题内容 */
+#write h3 span {
+	border-radius: 5px;
+	background: #1DA4FF;
+	color: #ffffff;
+	padding: 3px 8px;
+	margin-right: 4px;
+	background: linear-gradient(to right, #3fb0cc, #3fcc98);
+	transition: all ease-in-out 0.1s;
+}
+
+
+/* 四级标题 */
+#write h4 {
+  margin: 20px 0;
+  font-size: 1.2rem;
+  text-align: left;
+  color: #3fccca;
+}
+
+
+/* 五级标题 */
+#write h5 {
+  margin: 23px 0;
+  font-size: 1.1rem;
+  text-align: left;
+  color: #ff6b6b;
+}
+
+
+#write h6 {
+  font-size: 1rem;
+  color: #fff;
+}
+
+
+/* 有序列表 */
+#write ol {
+  list-style-type: none; /* 移除默认的数字列表样式 */
+  counter-reset: list-counter; /* 创建一个计数器 */
+}
+
+#write ol li {
+  display: flex; /* 使用flex布局使序列号和文本在同一行显示 */
+  align-items: center; /* 垂直居中对齐 */
+  margin-bottom: 2px; /* 调整文本上下间距 */
+  position: relative; /* 为后续的伪元素定位做准备 */
+}
+
+#write ol li::before {
+  content: counter(list-counter); /* 在列表项前显示计数器值 */
+  counter-increment: list-counter; /* 增加计数器的值 */
+  color: #3db5e9; /* 序列号颜色设置为蓝色 */
+  font-weight: bold; /* 序列号字体加粗 */
+  margin-right: 10px; /* 序列号和文本内容之间添加一些间距 */
+}
+
+/* 鼠标悬停时的样式 */
+#write ol li:hover {
+  background-color: transparent; /* 鼠标悬停时背景颜色保持透明 */
+}
+
+#write ol li:hover::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 2px;
+  background-color: #25cf91; /* 鼠标悬停时在文本内容下方添加紫红色虚线 */
+  opacity: 0.3; /* 降低虚线的透明度 */
+}
+
+
+/* 无序列表整体样式 */
+#write ul {
+  font-size: 15px;
+  color: #fff;
+
+}
+
+
+#write ul {
+  list-style: none;
+  padding-left: 6px !important;
+}
+
+#write > ul > li:not(.task-list-item) {
+  position: relative;
+  padding: 8px 0;
+  padding-left: 25px;
+  line-height: 1rem;
+}
+
+#write > ul> li:not(.task-list-item)::before {
+  content: "";
+  width: 12px;
+  height: 12px;
+  background: #ffc840;
+  display: inline-block;
+  vertical-align: middle;
+  margin-top: -2px;
+  margin-right: 11px;
+  margin-left: -24px;
+  border-radius: 100%;
+  border: 3px solid #f7f7f7;
+  z-index: 100;
+  position: relative;
+}
+
+/* 二级ul上浮一点 */
+#write > ul > li:not(.task-list-item) > ul {
+  top:-0.3rem
+}
+
+#write > ul > li:not(.task-list-item)::after {
+  content: "";
+  height: 100%;
+  width: 2px;
+  background: #ffc9401d;
+  position: absolute;
+  left: 6px;
+  top: 20px;
+}
+
+#write > ul > li:not(.task-list-item):last-child:after {
+  display: none;
+}
+
+#write > ul > li:not(.task-list-item) > p {
+  top: -1.2em;
+  line-height: 1.65rem;
+  margin: 0;
+}
+
+/* 任务列表样式 */
+#write .md-task-list-item:before{
+  content: none;
+}
+
+#write .md-task-list-item>input{
+  margin: 0px;
+  padding: 0px;
+  width: 0px;
+  height: 0px;
+  line-height: 1.2rem;
+}
+#write .md-task-list-item>input:before {
+  display: inline-block;
+  content: '';
+  width: 1.1rem;
+  height: 1.1rem;
+  text-align: center;
+  vertical-align: middle;
+  background-color: #f7f7f7;
+  border: 2px solid #ffb600;
+  border-radius: 30%;
+}
+
+#write .md-task-list-item>input[checked]:before{
+  content: '✔';
+  color:#555 ;
+  -webkit-text-stroke: 1px #555 ;
+  width: 1.1rem;
+  height: 1.1rem;
+  background-color: #ffb600;
+  border: 2px solid #ffb600;
+  border-radius: 30%;
+  font-size: 0.75rem;
+  line-height: 0.8rem;
+}
+
+#write input[type=checkbox] {
+  position: absolute;
+  top: 7px;
+  left: -3px;
+}
+
+#write .md-task-list-item p{
+  margin: 0px 1.8rem;
+}
+
+
+
+/* 引用 */
+#write blockquote {
+    display: block;
+    font-size: 1.2em;
+    overflow: auto;
+    border-left: 3px solid #1ebbff;
+    padding: 5px 10px 5px 10px;
+    margin-bottom: 8px;
+    margin-top: 8px;
+    background: #4E5D6C;
+}
+
+
+
+/* 链接 */
+#write  a {
+  color: #f7f7f7;
+  border-bottom: 1px solid #FE5CB1;
+  text-decoration: none;
+  transform: all linear 0.1s;
+}
+
+#write a:hover {
+  font-weight: bolder;
+  color: #FF89C7;
+  border-bottom: 1px solid #FF89C7;
+  transform: all linear 0.1s;
+}
+
+#write p a::before {
+  content: url("data:image/svg+xml;charset=utf-8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 1024 1024'%3E%3Cpath  d='M477.934459 330.486594A50.844091 50.844091 0 0 1 406.752731 258.796425L512 152.532274a254.220457 254.220457 0 0 1 359.467726 359.467726L762.66137 618.772592a50.844091 50.844091 0 1 1-71.690168-71.690169l106.772591-106.772592a152.532274 152.532274 0 0 0-215.578947-215.578947z m70.164846 361.501489A50.844091 50.844091 0 1 1 619.789474 762.66137l-107.281033 107.281033A254.220457 254.220457 0 0 1 152.532274 512L259.813307 406.752731a50.844091 50.844091 0 1 1 72.19861 69.656405l-107.789474 107.281033a152.532274 152.532274 0 0 0 215.578947 215.578947z m-126.601788-16.77855a50.844091 50.844091 0 1 1-71.690168-71.690169l251.678252-251.678252a50.844091 50.844091 0 0 1 71.690169 71.690169z'/%3E%3C/svg%3E");
+  color: #FE6AB8;
+  display: inline-block;
+  width: 1em; 
+  height: 1em; 
+  margin-right: 0.2em; 
+  vertical-align: sub; 
+}
+
+#write a.md-toc-inner::before {
+  content: none;
+}
+#write sup a::before {
+  content: none;
+}
+/* 加粗 */
+#write strong {
+  color: #FF6666;
+  font-weight: bold;
+}
+
+#write strong::after {
+}
+
+/* 斜体 */
+#write em {
+  font-style: italic;
+  color: #f7f7f7;
+}
+/* 高亮 */
+#write mark {
+  /* font-weight: bolder; */
+  color: #000;
+  background: #277da1;
+}
+/* 加粗斜体 */
+#write em strong {
+  color: #f7f7f7;
+}
+
+/* 删除线 */
+#write del {
+  color: #f7f7f7;
+}
+
+/* 分隔线*/
+#write hr {
+  height: 1px;
+  padding: 0;
+  border: none;
+  border-top: 2px solid #a020d2;
+}
+
+/* 图片*/
+#write img {
+	border-radius: 8px;
+	display: block;
+	margin: 5px auto;
+	object-fit: contain;
+	border-left: none !important;
+	border-right: none !important;
+
+}
+
+/* 图片描述文字 */
+#write figcaption {
+  display: block;
+  font-size: 13px;
+  color: #F2F5F5;
+}
+
+/* 行内代码 */
+#write p code {
+  color: #14dd53;
+  font-family: MiSans, Cascadia Code, Fira Code, JetBrains Momo, Operator Mono, Consolas, Monaco, Menlo, monospace;
+  letter-spacing: 0.3px;
+  background: #F2F5F5;
+  border-radius: 5px;
+  padding: 0.2em 0.4em;
+}
+#write li code {
+  color: #f7f7f7;
+}
+
+
+
+/*表格*/
+#write table {
+  display: table;
+  text-align: left;
+  color: #f7f7f7;
+}
+#write tbody {
+  border: 0;
+}
+#write table tr {
+  border: 0;
+  border-top: 1px solid #4d4d4d;
+  background-color: white;
+}
+#write table tr:nth-child(2n) {
+  background-color: #454649;
+}
+#write table tr th,
+#write table tr td {
+  font-size: 1rem;
+  background-color: #5F5F5F;
+  border: 1px solid #F2F5F5;
+  padding: 5px 10px;
+  text-align: left;
+}
+#write table tr th {
+  font-weight: bold;
+  background-color: #454649;
+}
+
+/* 脚注文字 */
+#write .footnote-word {
+  font-weight: normal;
+  color: #f7f7f7;
+}
+
+/* 脚注上标 */
+#write .footnote-ref {
+  font-weight: normal;
+  color: #f7f7f7;
+}
+
+/*脚注链接样式*/
+#write .footnote-item em {
+  font-size: 14px;
+  color: #f7f7f7;
+  display: block;
+  background: none;
+}
+
+/* 行间公式*/
+#write .block-equation svg {
+	color: #f7f7f7;
+}
+
+/* 行内公式
+*/
+#write .inline-equation svg {
+	color: #f7f7f7;
+}
+
+/* 复选框 */
+
+#write input[type=checkbox] {
+    width: 0;
+}
+
+.task-list-item input::before {
+    content: "";
+    display: inline-block;
+    width: 1.0125rem;
+    height: 1.0125rem;
+    vertical-align: middle;
+    text-align: center;
+    border: 1px solid var(--marker-color);
+    border-radius: 1.2rem;
+    background-color: #fdfdfd;
+    margin-left: -0.1rem;
+    margin-right: 0.1rem;
+    margin-top: -.6rem;
+}
+
+.task-list-item input:checked::before {
+    content: '✓';
+    font-weight: bold;
+    -webkit-text-stroke: 1px var(--primary-color);
+    color: var(--primary-color);
+    background-color: var(--bg-color);
+    font-size: 0.75rem;
+    line-height: 0.8rem;
+}
+
+blockquote .task-list-item input::before {
+    margin-top: .2rem;
+}
+
+
+/*
+ * 滚动条
+ */
+
+#outline-content::-webkit-scrollbar {
+    width: .5rem;
+}
+
+#file-library::-webkit-scrollbar {
+    width: .5rem;
+}
+
+::-webkit-scrollbar-track {
+    border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+    border-radius: 10px;
+    background: rgba(179, 179, 179, 0.425);
+}
+
+::-webkit-scrollbar {
+    width: 1rem;
+}
+
+/* 侧边栏 */
+#typora-sidebar {
+    color: #3fcc98;
+    background-color: #1f1f21;
+    font-color: #fff;
+	border-top: 0 solid #1f1f21;
+}
+
+
+/* 设置目录的样式 */
+#write div[mdtype=toc] {
+  font-size: 1rem;
+
+}
+
+
+
+/* 导出HTML的样式 */
+body.typora-export{
+  padding-left: 0px
+}
+.typora-export-content .outline-content::before {
+  content: "目录";
+  font-size: 20px;
+  font-weight: bold;
+  position: absolute;
+  top: 22px;
+  left: 6px;
+  border-radius: 5px;
+  box-sizing: border-box;
+  z-index: -1;
+}
+
+.typora-export-sidebar .outline-content{
+  height: 100%;
+
+  border-right: 1px solid #d2d2d2;
+}
+
+.typora-export-content .typora-export-content{
+
+  padding-left: 0px;
+}
+
+
+.typora-export-content .outline-expander{
+  width: 0;
+}
+
+.typora-export-content .outline-item-active>.outline-item::after{
+
+  content: "";
+  position: relative;
+  width: 11px;
+  height: 8px;
+  background: #ffc840;
+  float: right;
+  right: 5px;
+  top: -14px;
+  z-index: 100;
+  border-radius: 40% 20% 20% 40%;
+}
+.typora-export-content .outline-label{
+  max-width: 250px;
+  white-space: nowrap;  
+  overflow: hidden;         
+  text-overflow: ellipsis; 
+}
+
