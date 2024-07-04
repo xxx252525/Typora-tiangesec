@@ -58,7 +58,7 @@
   font-weight: bold;
   margin: 20px 0;
   padding: 0px 10px;
-  border-radius: 10px;
+  border-radius: 8px;
   background-color: #f6ae77;
   background: linear-gradient(to right, #f7ce68, #fbabfe);
   background-size: 200% 100%;
@@ -404,8 +404,9 @@
   font-family: MiSans, Cascadia Code, Fira Code, JetBrains Momo, Operator Mono, Consolas, Monaco, Menlo, monospace, MesloLGS NF;
   letter-spacing: 0.3px;
   background: #F4F4F4;
-  padding: 0.2em 0.4em;
-  border-radius: 5px;
+  border-radius: 4px;
+  letter-spacing: 0.2px;
+  padding: 0.1em 0.2em;
 }
 #write li code {
   color: #595959;

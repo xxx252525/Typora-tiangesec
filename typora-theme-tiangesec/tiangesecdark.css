@@ -108,7 +108,7 @@
   font-weight: bold;
   margin: 20px 0;
   padding: 0px 10px;
-  border-radius: 10px;
+  border-radius: 8px;
   background-color: #19F39B;
   background: linear-gradient(to right, #29C1A8, #F743C8,#F94187);
   background-size: 200% 100%;
@@ -444,10 +444,10 @@
 #write p code {
   color: #14dd53;
   font-family: MiSans, Cascadia Code, Fira Code, JetBrains Momo, Operator Mono, Consolas, Monaco, Menlo, monospace, MesloLGS NF;
-  letter-spacing: 0.3px;
-  background: #F2F5F5;
-  border-radius: 5px;
-  padding: 0.2em 0.4em;
+  letter-spacing: 0.2px;
+  background: #7f7f7f;
+  border-radius: 4px;
+  padding: 0.1em 0.2em;
 }
 #write li code {
   color: #f7f7f7;
