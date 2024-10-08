@@ -1,6 +1,88 @@
 @import "dark/dark.css";
 @import "dark/code.css";
 
+:root {
+    --of-theme-color: #91ffc8;
+    /* --of-theme-color-dark: #2a3139; */
+    --of-theme-color-dark: #2a3932;
+    
+    --of-darkest-color: #101312;
+    --of-darker-color: #151a17;
+    --of-dark-color: #212b27;
+    --of-dark-color2: #1c211f;
+    --of-strong: white;
+    --of-strong-code: #ff795e;
+    --of-font-size: 16.5px; /*字体大小*/
+    --of-selection: #4a89dc;
+    --of-selection-text: white;
+    --of-link-color: #91ffc8;
+
+    --bg-color: var(--of-darker-color);
+    --bg-color-megamenu: #15171a;
+    /* 侧边栏颜色 */
+    --side-bar-bg-color: var(--of-darkest-color);
+    --text-color: white;
+    /* 这才是文字颜色 */
+    --text-color-main: white;
+    /* 选中文字的颜色 */
+    --select-text-bg-color: var(--of-selection);
+    /* 被激活的目录背景 */
+    --item-hover-bg-color:  var(--of-dark-color);
+    --control-text-color: #b7b7b7;
+    --control-text-hover-color: #fff;
+    --window-border: 1px solid #333;
+    /* 被激活的文件背景 */
+    --active-file-bg-color: var(--of-dark-color);
+    --active-file-border-color: var(--of-theme-color);
+    --primary-color: var(--of-theme-color);
+    --active-file-text-color: #fff;
+    --item-hover-text-color: #fff;
+    /* 编辑HTML文件 */
+    --rawblock-edit-panel-bd: var(--of-dark-color);
+    --search-select-bg-color: #3c3c3c;
+    
+    --code-bg-color:  var(--of-dark-color);
+    /* --code-bg-color: #31302e; */
+    --footer-bg-color: var(--side-bar-bg-color);
+    --table-bg-darker-color:   var(--of-dark-color2);
+    --table-bg-color:   var(--of-dark-color);
+    --table-bg-color2:   var(--of-darkest-color);
+    --table-thead-color: var(--of-darkest-color);
+    --md-code-color: var(--of-strong-code);
+    --table-edit-color: var(--of-darkest-color);
+    --task-list-border-color: #ffffff;
+    --task-list-black-border-color: #000000;
+    /* --task-list-bg-color: rgb(176, 21, 21); */
+    --task-list-checked-color: #00ffa6;
+    /* 设置导航栏选中的背景颜色 */
+    --nav-group-item-color: var(--of-theme-color-dark);
+    --select-background: var(--of-theme-color-dark);
+    --other-main-color: var(--of-theme-color);
+    --hover-color: var(--of-dark-color2);
+    /* 引用的背景颜色 */
+    --blockquote-color: var(--of-dark-color);
+    /* 源代码被激活的颜色 */
+    --codemirror-color: var(--of-dark-color);
+    /* 右键菜单按下 */
+    --menu-item-container-btn-hover: var(--of-dark-color2);
+    /* 右键菜单按钮边框 */
+    --menu-item-container-btn: var(--of-theme-color-dark);
+    /* 右键菜单和字数统计 */
+    --context-menu-color: var(--of-darkest-color);
+    /* tooltip颜色（右键菜单按按钮时显示提示的颜色） */
+    --tooltip-color: var(--of-darkest-color);
+    /* tooltip文字颜色*/
+    --tooltip-text-color: white;
+    /* 滚动条颜色 */
+    --scrollbar-color: var(--of-theme-color-dark);
+    /* 源代码模式光标 */
+    --code-cursor-color: var(--of-theme-color);
+    /* 返回按钮 */
+
+
+}
+
+/* ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- */
 
 /* 打印页面设置 */
 /* @media print {
@@ -26,9 +108,9 @@
   font-weight: bold;
   margin: 20px 0;
   padding: 0px 10px;
-  border-radius: 10px;
-  background-color: #f6ae77;
-  background: linear-gradient(to right, #f7ce68, #fbabfe);
+  border-radius: 8px;
+  background-color: #19F39B;
+  background: linear-gradient(to right, #29C1A8, #F743C8,#F94187);
   background-size: 200% 100%;
   background-position: 0% 0%;
   transition: all ease-in-out 0.1s;
@@ -50,7 +132,7 @@
 /* 二级标题 */
 #write h2 {
   font-size: 1.3rem;
-  border-bottom: 2px solid #F37553;
+  border-bottom: 2px solid #145BEA;
   
 }
 
@@ -58,8 +140,8 @@
 #write h2 span {
 	display: inline-block;
 	font-weight: bold;
-	background: rgb(239, 112, 96);
-	color: #ffffff;
+	background: linear-gradient(to right, #145BEA, #564FEB, #7C34CC);
+	color: #F0F0F0;
 	padding: 3px 10px 1px;
 	border-top-right-radius: 3px;
 	border-top-left-radius: 3px;
@@ -77,7 +159,7 @@
 #write h3 span {
 	border-radius: 5px;
 	background: #1DA4FF;
-	color: #ffffff;
+	color: #F0F0F0;
 	padding: 3px 8px;
 	margin-right: 4px;
 	background: linear-gradient(to right, #3fb0cc, #3fcc98);
@@ -110,25 +192,38 @@
 
 
 /* 有序列表 */
+::marker {
+    font-weight: bold;
+    color: #1ebbff;
+}
+
+li.md-list-item {
+    margin: 0.4rem 0;
+}
+
 #write ol {
-  list-style-type: none; /* 移除默认的数字列表样式 */
-  counter-reset: list-counter; /* 创建一个计数器 */
+    margin-top: 8px;
+    margin-bottom: 8px;
+    padding-left: 20px;
 }
 
-#write ol li {
-  display: flex; /* 使用flex布局使序列号和文本在同一行显示 */
-  align-items: center; /* 垂直居中对齐 */
-  margin-bottom: 2px; /* 调整文本上下间距 */
-  position: relative; /* 为后续的伪元素定位做准备 */
+#write em {
+    padding: 0 3px 0 0;
 }
 
-#write ol li::before {
-  content: counter(list-counter); /* 在列表项前显示计数器值 */
-  counter-increment: list-counter; /* 增加计数器的值 */
-  color: #3db5e9; /* 序列号颜色设置为蓝色 */
-  font-weight: bold; /* 序列号字体加粗 */
-  margin-right: 10px; /* 序列号和文本内容之间添加一些间距 */
+#write ol {
+    list-style-type: decimal;
 }
+
+#write li section {
+    margin-top: 5px;
+    margin-bottom: 5px;
+    line-height: 1.7rem;
+    text-align: justify;
+    color: var(--text-color);
+    font-weight: 500;
+}
+
 
 /* 鼠标悬停时的样式 */
 #write ol li:hover {
@@ -142,8 +237,8 @@
   left: 0;
   width: 100%;
   height: 2px;
-  background-color: #25cf91; /* 鼠标悬停时在文本内容下方添加紫红色虚线 */
-  opacity: 0.3; /* 降低虚线的透明度 */
+  background-color: #1DA4FF; /* 鼠标悬停时在文本内容下方添加虚线 */
+  opacity: 0.5; /* 降低虚线的透明度 */
 }
 
 
@@ -157,45 +252,44 @@
 
 #write ul {
   list-style: none;
-  padding-left: 6px !important;
+  padding-left: 1px !important;
 }
 
 #write > ul > li:not(.task-list-item) {
   position: relative;
-  padding: 8px 0;
+  padding: 0.5px 0;
   padding-left: 25px;
-  line-height: 1rem;
+  line-height: 0.6rem;
 }
 
 #write > ul> li:not(.task-list-item)::before {
   content: "";
-  width: 12px;
-  height: 12px;
-  background: #ffc840;
+  width: 8px;
+  height: 8px;
+  background: #564FEB;
   display: inline-block;
   vertical-align: middle;
   margin-top: -2px;
   margin-right: 11px;
-  margin-left: -24px;
+  margin-left: -23px;
   border-radius: 100%;
-  border: 3px solid #f7f7f7;
-  z-index: 100;
-  position: relative;
+  z-index: 150;
+  /* position: relative; */
 }
 
 /* 二级ul上浮一点 */
 #write > ul > li:not(.task-list-item) > ul {
-  top:-0.3rem
+  top:0rem
 }
 
 #write > ul > li:not(.task-list-item)::after {
   content: "";
   height: 100%;
   width: 2px;
-  background: #ffc9401d;
+  background: #564FEB;
   position: absolute;
-  left: 6px;
-  top: 20px;
+  left: 5px;
+  top: 8px;
 }
 
 #write > ul > li:not(.task-list-item):last-child:after {
@@ -204,7 +298,7 @@
 
 #write > ul > li:not(.task-list-item) > p {
   top: -1.2em;
-  line-height: 1.65rem;
+  line-height: 1.5rem;
   margin: 0;
 }
 
@@ -223,23 +317,23 @@
 #write .md-task-list-item>input:before {
   display: inline-block;
   content: '';
-  width: 1.1rem;
-  height: 1.1rem;
+  width: 1rem;
+  height: 1rem;
   text-align: center;
   vertical-align: middle;
-  background-color: #f7f7f7;
-  border: 2px solid #ffb600;
-  border-radius: 30%;
+  background-color: #564FEB;
+  border: 2px solid #1DA4FF;
+  border-radius: 20%;
 }
 
 #write .md-task-list-item>input[checked]:before{
   content: '✔';
-  color:#555 ;
-  -webkit-text-stroke: 1px #555 ;
-  width: 1.1rem;
-  height: 1.1rem;
-  background-color: #ffb600;
-  border: 2px solid #ffb600;
+  color:#fff ;
+  -webkit-text-stroke: 1px #fff ;
+  width: 1rem;
+  height: 1rem;
+  background-color: #1DA4FF;
+  border: 2px solid #1DA4FF;
   border-radius: 30%;
   font-size: 0.75rem;
   line-height: 0.8rem;
@@ -337,12 +431,12 @@
   height: 1px;
   padding: 0;
   border: none;
-  border-top: 2px solid #a020d2;
+  border-top: 2px solid #68b7f8;
 }
 
 /* 图片*/
 #write img {
-	border-radius: 8px;
+	border-radius: 5px;
 	display: block;
 	margin: 5px auto;
 	object-fit: contain;
@@ -361,11 +455,11 @@
 /* 行内代码 */
 #write p code {
   color: #14dd53;
-  font-family: MiSans, Cascadia Code, Fira Code, JetBrains Momo, Operator Mono, Consolas, Monaco, Menlo, monospace;
-  letter-spacing: 0.3px;
-  background: #F2F5F5;
-  border-radius: 5px;
-  padding: 0.2em 0.4em;
+  font-family: MiSans, Cascadia Code, Fira Code, JetBrains Momo, Operator Mono, Consolas, Monaco, Menlo, monospace, MesloLGS NF, MesloLGM Nerd Font;
+  letter-spacing: 0.2px;
+  background: #7f7f7f;
+  border-radius: 4px;
+  padding: 0.1em 0.2em;
 }
 #write li code {
   color: #f7f7f7;
@@ -495,21 +589,285 @@ blockquote .task-list-item input::before {
     width: 1rem;
 }
 
-/* 侧边栏 */
-#typora-sidebar {
+
+
+.dropdown-menu .btn:hover,
+.dropdown-menu .btn:focus,
+.md-toc .btn:hover,
+.md-toc .btn:focus {
     color: #3fcc98;
-    background-color: #1f1f21;
-    font-color: #fff;
-	border-top: 0 solid #1f1f21;
+    background: black;
+}
+
+#toc-dropmenu {
+    background:  var(--select-background);
+    border: 1px solid rgba(253, 253, 253, 0.15);
+}
+
+#toc-dropmenu .divider {
+    background-color: #9b9b9b;
+}
+
+.outline-expander:before {
+    top: 2px;
+}
+
+/* 设置侧边栏 */
+#typora-sidebar {
+    box-shadow: 3px 0px 10px rgba(0, 0, 0, 0.5);
+    border-right: 1px dashed;
+    border-right: none;
+    background: #282c35 ;
+    backdrop-filter: saturate(120%) blur(20px) brightness(0.85);
+}
+
+.sidebar-tabs {
+    border-bottom:0;
+}
+
+#typora-sidebar:hover .outline-title-wrapper {
+    border-left: 1px dashed;
+}
+
+.outline-title-wrapper .btn {
+    color: inherit;
+}
+
+.outline-item:hover {
+    border-color: #212b27;
+    background-color: #212b27;
+    color: white;
 }
 
 
-/* 设置目录的样式 */
-#write div[mdtype=toc] {
-  font-size: 1rem;
-
+/* 侧边栏 */
+.sidebar-menu {
+  color: #3fcc98;
+  background-color: #282c35;
 }
 
+/* 侧边阴影 */
+#typora-sidebar,
+.typora-node #typora-sidebar {
+  box-shadow: 3px 0px 10px rgba(0, 0, 0, 0.5);
+}
+
+
+/* 侧边搜索与文件分割线颜色 */
+.ty-sidebar-search-panel {
+  border-color: #3fcc98;
+}
+
+
+/* 侧边中文菜单选项样式 */
+.dropdown-menu > li > a {
+  color: #fff;
+}
+
+/* 侧边中文菜单悬停样式 */
+.dropdown-menu > li > a:hover {
+  background-color: #212b27;
+  color: #3fcc98;
+}
+
+
+/* 侧边栏底部样式 */
+.sidebar-footer {
+  border: 0px;
+  box-shadow: 0 -4px 10px -5px rgba(0, 0, 0, 0.5);
+}
+
+
+
+/** quick open **/
+.auto-suggest-container {
+    border: 0px;
+    background-color: #2a3932;
+}
+
+#typora-quick-open {
+    background-color: #2a3932;
+}
+
+#typora-quick-open input{
+    background-color: #2a3932;
+    border: 0;
+    border-bottom: 1px solid grey;
+}
+
+.typora-quick-open-item {
+    background-color: inherit;
+    color: inherit;
+}
+
+.typora-quick-open-item.active,
+.typora-quick-open-item:hover {
+    background-color: #91ffc8;
+    color: white;
+}
+
+.typora-quick-open-item:hover {
+    background-color:  #2a3932;
+}
+
+.typora-search-spinner > div {
+  background-color: #fff;
+}
+
+
+/* 右键菜单和字数统计 */
+
+.context-menu,
+#footer-word-count-info,
+#spell-check-panel {
+    backdrop-filter: saturate(120%) blur(20px) brightness(0.85);
+    background: none;
+    border-radius: 8px;
+}
+
+.context-menu.dropdown-menu .divider,
+.dropdown-menu .divider {
+    background-color: #777777;
+    opacity: 1;
+}
+
+/* 右键菜单按钮 */
+.menu-item-container a.menu-style-btn {
+    background: none;
+    border: 1px solid;
+    border-color: #2a3932;
+    border-radius: 5px;
+}
+
+.md-task-list-item>input {
+    margin-left: -1.3em;
+    margin-top: 0.3rem;
+    -webkit-appearance: none;
+}
+
+.md-mathjax-midline {
+    background-color:  #2a3932;
+    border-bottom: none;
+}
+
+footer.ty-footer {
+    border-color: #2a3932;
+}
+
+.ty-preferences .btn-default {
+    background: transparent;
+}
+.ty-preferences .btn-default:hover {
+    background: #2a3932;
+}
+
+.ty-preferences select {
+    border: 1px solid #9a9a9a;
+    height: 21px;
+}
+
+.ty-preferences .nav-group-item.active,
+.export-item.active,
+.export-items-list-control,
+.export-detail {
+    background: #212b27;
+}
+
+.ty-preferences input[type="search"] {
+    border-color: #212b27;
+    background: #212b27;
+    line-height: 22px;
+    border-radius: 6px;
+    color: white;
+}
+
+.ty-preferences input[type="search"]:focus {
+    box-shadow: none;
+}
+
+[data-is-directory="true"] .file-node-content {
+    margin-bottom: 0;
+}
+
+.file-node-title {
+    line-height: 22px;
+}
+
+.html-for-mac .file-node-open-state, .html-for-mac .file-node-icon {
+    line-height: 26px;
+}
+
+
+/* 页尾模糊 */
+
+footer {
+    backdrop-filter: saturate(120%) blur(20px) brightness(0.85);
+    border: none !important;
+    background: none;
+}
+/* footer {
+    color: inherit;
+} */
+
+@media (max-width: 1000px) {
+    footer {
+        border-top: none;
+    }
+    footer:hover {
+        color: inherit;
+    }
+}
+
+#file-info-file-path .file-info-field-value:hover {
+    background-color: #555;
+    color: #dedede;
+}
+
+.megamenu-content,
+.megamenu-opened header {
+    background: #15171a;
+}
+
+.megamenu-menu-panel h2,
+.megamenu-menu-panel h1,
+.long-btn {
+    color: inherit;
+}
+
+.megamenu-menu-panel input[type='text'] {
+    background: inherit;
+    border: 0;
+    border-bottom: 1px solid;
+}
+
+#recent-file-panel {
+    padding: 10px;
+  }
+
+#recent-file-panel-action-btn {
+    background: inherit;
+    border: 1px grey solid;
+}
+
+#recent-file-panel tbody {
+    background: none;
+    backdrop-filter: saturate(120%) blur(20px) brightness(0.85);
+}
+
+#recent-file-panel tbody tr:nth-child(2n) {
+    background: none;
+}
+
+#recent-file-panel tbody tr:nth-child(2n + 1) {
+    background: none;
+}
+
+.modal-footer .btn-default, 
+.modal-footer .btn-primary,
+.modal-footer .btn-default:not(:hover) {
+    border: 1px solid;
+    border-color: transparent;
+}
 
 
 /* 导出HTML的样式 */
