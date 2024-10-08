@@ -1,5 +1,8 @@
 # zh-CN
-Typora-TIANGESEC主题是集合了Orangeheart、Phycat、Lapis、Blackout、aocado、foresee等多个主题风格的主题。
+Typora-TIANGESEC主题是集合了Orangeheart、Phycat、Lapis、Blackout、aocado、foresee等多个主题风格的主题。Typora-TIANGESEC是Typora的主题，结合了多个主题的特色和优点进行整改，有很好的视觉效果
+
+En:
+Typora-TIANGESEC theme is a collection of Orangeheart, Phycat, Lapis, Blackout, aocado, foresee and other theme styles. Typora-TIANGESEC is the theme of Typora that combines the features and advantages of multiple themes for rectification and has a good visual effect
 
 ## 白昼模式
 ![image-20240709005823333](https://github.com/xxx252525/Typora-TIANGESEC/assets/104115333/8c8acb0b-03be-4e62-8f6b-6de20d9c0acc)
