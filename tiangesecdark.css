@@ -398,7 +398,7 @@ li.md-list-item {
 }
 /* 加粗 */
 #write strong {
-  color: #FF6666;
+  color: #e5e5e5;
   font-weight: bold;
 }
 
@@ -415,10 +415,6 @@ li.md-list-item {
   /* font-weight: bolder; */
   color: #000;
   background: #277da1;
-}
-/* 加粗斜体 */
-#write em strong {
-  color: #f7f7f7;
 }
 
 /* 删除线 */
