@@ -1,8 +1,8 @@
 # zh-CN
-Typora-TIANGESEC主题是集合了多个优秀样式风格的主题，有很好的视觉效果!
+TIANGESEC主题是集合了多个优秀样式风格的主题外观，有很好的视觉效果，尽情享受视觉盛宴吧!
 
 En:
-Typora-TIANGESEC theme is a collection of several excellent style styles with great visual effects!
+TIANGESEC theme is a collection of several excellent style style theme appearance, have a good visual effect, enjoy the visual feast!
 
 ## 白昼模式
 ![image-20240709005823333](https://github.com/xxx252525/Typora-TIANGESEC/assets/104115333/8c8acb0b-03be-4e62-8f6b-6de20d9c0acc)
