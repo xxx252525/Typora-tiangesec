@@ -47,7 +47,7 @@
     word-break: break-word;
     word-wrap: break-word;
     text-align: left;
-    font-family:'Source Han Serif CN', sans-serif, "MiSans Regular", sans-serif, YaHei, Cascadia Code, Fira Code, JetBrains Momo, MesloLGS NF, MesloLGM Nerd Font;
+    font-family: 'Source Han Serif CN', sans-serif, "MiSans Regular", sans-serif, Microsoft YaHei, Open Sans, serif, Cascadia Code, Fira Code, JetBrains Momo, MesloLGS NF, MesloLGM Nerd Font;
 }
 
 /*段落*/
@@ -59,7 +59,6 @@
   margin: 0;
   line-height: 1.5rem;
   color: #000;
-  font-family: 'Source Han Serif CN', sans-serif;
 }
 #write div[mdtype=toc] {
   font-size: 1rem;
@@ -79,7 +78,6 @@
   background-position: 0% 0%;
   transition: all ease-in-out 0.1s;
   font-family: "MiSans", sans-serif;
-  
 }
 
 #write h1:hover {
@@ -100,7 +98,6 @@
   font-size: 1.3rem;
   border-bottom: 2px solid #F37553;
   font-family: "MiSans", sans-serif;
-  
 }
 
 /* 二级标题内容 */
@@ -162,6 +159,7 @@
   text-align: left;
   color: #ff6b6b;
   font-family: "MiSans", sans-serif;
+}
 
 
 #write h6 {
@@ -340,7 +338,7 @@ li.md-list-item {
     padding: 5px 10px 5px 10px;
     margin-bottom: 8px;
     margin-top: 8px;
-    background: #d9edfd;
+    background: #E8E8E8;
 }
 
 
@@ -380,7 +378,6 @@ li.md-list-item {
 #write strong {
   color: #212121;
   font-weight: bold;
-
 }
 
 #write strong::after {
