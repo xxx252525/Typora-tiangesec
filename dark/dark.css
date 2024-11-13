@@ -33,7 +33,7 @@ body {
 	word-break: break-word;
 	word-wrap: break-word;
 	text-align: left;
-    font-family: MiSans, Microsoft YaHei, Open Sans, serif, Cascadia Code, Fira Code, JetBrains Momo, MesloLGS NF;
+    font-family: 'Source Han Serif CN', sans-serif, MiSans, Microsoft YaHei, Open Sans, serif, Cascadia Code, Fira Code, JetBrains Momo, MesloLGS NF;
 }
 
 /*段落*/

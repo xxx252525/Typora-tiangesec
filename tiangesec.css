@@ -47,7 +47,7 @@
     word-break: break-word;
     word-wrap: break-word;
     text-align: left;
-    font-family: MiSans, Microsoft YaHei, Open Sans, serif, Cascadia Code, Fira Code, JetBrains Momo, MesloLGS NF, MesloLGM Nerd Font;
+    font-family: 'Source Han Serif CN', sans-serif, MiSans, Microsoft YaHei, Cascadia Code, Fira Code, JetBrains Momo, MesloLGS NF, MesloLGM Nerd Font;
 }
 
 /*段落*/
@@ -333,7 +333,7 @@ li.md-list-item {
     padding: 5px 10px 5px 10px;
     margin-bottom: 8px;
     margin-top: 8px;
-    background: #E8E8E8;
+    background: #d9edfd;
 }
 
 
@@ -373,6 +373,7 @@ li.md-list-item {
 #write strong {
   color: #212121;
   font-weight: bold;
+
 }
 
 #write strong::after {
