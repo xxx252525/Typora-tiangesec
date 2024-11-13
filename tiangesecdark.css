@@ -114,6 +114,7 @@
   background-size: 200% 100%;
   background-position: 0% 0%;
   transition: all ease-in-out 0.1s;
+  font-family: "MiSans Regular", sans-serif;
 }
 
 #write h1:hover {
@@ -133,6 +134,7 @@
 #write h2 {
   font-size: 1.3rem;
   border-bottom: 2px solid #145BEA;
+  font-family: "MiSans Regular", sans-serif;
   
 }
 
@@ -153,6 +155,7 @@
 /* 三级标题 */
 #write h3 {
   font-size: 1.3rem;
+  font-family: "MiSans Regular", sans-serif;
 }
 
 /* 三级标题内容 */
@@ -173,6 +176,7 @@
   font-size: 1.2rem;
   text-align: left;
   color: #3fccca;
+  font-family: "MiSans Regular", sans-serif;
 }
 
 
@@ -182,12 +186,14 @@
   font-size: 1.1rem;
   text-align: left;
   color: #ff6b6b;
+  font-family: "MiSans Regular", sans-serif;
 }
 
 
 #write h6 {
   font-size: 1rem;
   color: #fff;
+  font-family: "MiSans Regular", sans-serif;
 }
 
 
