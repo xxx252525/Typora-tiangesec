@@ -277,11 +277,11 @@ li.md-list-item {
 }
 
 /* 鼠标悬停时的样式 */
-#write ol li:hover {
+#write ul li:hover {
   background-color: transparent; /* 鼠标悬停时背景颜色保持透明 */
 }
 
-#write ol li:hover::after {
+#write ul li:hover::after {
   content: '';
   position: absolute;
   bottom: 0;
