@@ -200,7 +200,7 @@
 /* 有序列表 */
 ::marker {
     font-weight: bold;
-    color: #1ebbff;
+    color: #06b256;
 }
 
 li.md-list-item {
@@ -243,70 +243,55 @@ li.md-list-item {
   left: 0;
   width: 100%;
   height: 2px;
-  background-color: #1DA4FF; /* 鼠标悬停时在文本内容下方添加虚线 */
+  background-color: #06b256; /* 鼠标悬停时在文本内容下方添加虚线 */
   opacity: 0.5; /* 降低虚线的透明度 */
 }
 
 
 /* 无序列表整体样式 */
 #write ul {
-  font-size: 15px;
-  color: #fff;
-
+	margin-top: 8px;
+	margin-bottom: 8px;
+	padding-left: 25px;
+	font-size: 15px;
+    color: #fff;
 }
 
 
 #write ul {
-  list-style: none;
-  padding-left: 1px !important;
+	list-style-type: disc;
+
 }
 
-#write > ul > li:not(.task-list-item) {
-  position: relative;
-  padding: 0.5px 0;
-  padding-left: 25px;
-  line-height: 0.6rem;
+#write ul ul {
+	list-style-type: square;
 }
 
-#write > ul> li:not(.task-list-item)::before {
-  content: "";
-  width: 8px;
-  height: 8px;
-  background: #564FEB;
-  display: inline-block;
-  vertical-align: middle;
-  margin-top: -2px;
-  margin-right: 11px;
-  margin-left: -23px;
-  border-radius: 100%;
-  z-index: 150;
-  /* position: relative; */
+#write li section {
+	margin-top: 5px;
+	margin-bottom: 5px;
+	line-height: 1.7rem;
+	text-align: justify;
+	color: #06b256;
+	font-weight: 500;
 }
 
-/* 二级ul上浮一点 */
-#write > ul > li:not(.task-list-item) > ul {
-  top:0rem
+/* 鼠标悬停时的样式 */
+#write ol li:hover {
+  background-color: transparent; /* 鼠标悬停时背景颜色保持透明 */
 }
 
-#write > ul > li:not(.task-list-item)::after {
-  content: "";
-  height: 100%;
-  width: 2px;
-  background: #564FEB;
+#write ol li:hover::after {
+  content: '';
   position: absolute;
-  left: 5px;
-  top: 8px;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 2px;
+  background-color: #06b256; /* 鼠标悬停时在文本内容下方添加虚线 */
+  opacity: 0.5; /* 降低虚线的透明度 */
 }
 
-#write > ul > li:not(.task-list-item):last-child:after {
-  display: none;
-}
-
-#write > ul > li:not(.task-list-item) > p {
-  top: -1.2em;
-  line-height: 1.5rem;
-  margin: 0;
-}
 
 /* 任务列表样式 */
 #write .md-task-list-item:before{
