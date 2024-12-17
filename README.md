@@ -1,6 +1,14 @@
 # zh-CN
 TIANGESEC主题是集合了多个优秀样式风格的主题外观，有很好的视觉效果，尽情享受视觉盛宴吧!
 
+## 目录结构
+```
+---dart 黑夜模式依赖文件
+  |---tiangesec 白天主题
+  |---tiangesecdark 黑夜主题
+```
+
+
 En:
 TIANGESEC theme is a collection of several excellent style style theme appearance, have a good visual effect, enjoy the visual feast!
 
